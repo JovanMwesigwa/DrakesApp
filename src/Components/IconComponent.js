@@ -6,7 +6,7 @@ import AntDesign from 'react-native-vector-icons/AntDesign'
 
 import globalStyles from '../../config/GlobalStyles/styles'
 
-const IconComponent = ({antDesign, name, red, rounded}) => {
+const IconComponent = ({antDesign, name, red, rounded,}) => {
     return (
         <View style={[styles.container, { borderRadius: rounded ? 20 : 10 ,backgroundColor: red ? globalStyles.red : globalStyles.darkBlue }]}>
             {
