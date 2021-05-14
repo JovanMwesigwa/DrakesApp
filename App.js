@@ -16,7 +16,7 @@ import { CartScreen, Home, ProductDetailsScreen } from './src/Screens';
 const App: () => Node = () => {
   return (
     <AppScreen>
-      <CartScreen />
+      <Home />
     </AppScreen>
   );
 };

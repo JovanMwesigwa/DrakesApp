@@ -1,9 +1,10 @@
 /* eslint-disable prettier/prettier */
 import React from 'react'
 import { Image, ScrollView, Text, View } from 'react-native';
+import Entypo from 'react-native-vector-icons/Entypo'
 
 import styles from './styles.js'
-import {AppText, CardInfoComponent, HeaderText, HotSalesComponent, IconCard, ProductCardComponent, SearchComponent} from '../../Components/index'
+import {AppText, CardInfoComponent, HeaderText, HotSalesComponent, IconCard, IconComponent, ProductCardComponent, SearchComponent} from '../../Components/index'
 import globalStyles from '../../../config/GlobalStyles/styles.js';
 
 const iphone = require('../../../assets/iphone.png')
@@ -14,7 +15,7 @@ const Home = () => {
 
             <View style={styles.headerContainer}>  
                 <View style={styles.icon} />
-                <View style={styles.icon} />
+                <Entypo name='shopping-cart' size={25} color={globalStyles.darkBlue} />
             </View>
             
             <View style={styles.categoryContainer}> 
@@ -25,11 +26,11 @@ const Home = () => {
                 
                 <View style={styles.categories}>
                     <ScrollView horizontal showsHorizontalScrollIndicator={false}>
-                        <IconCard selected name='Phones' />
-                        <IconCard  name='Computer' />
-                        <IconCard  name='Gifts' />
-                        <IconCard  name='Kitchen' />
-                        <IconCard  name='Kitchen' />
+                        <IconCard selected name='Phones' icon='phone-portrait-outline' />
+                        <IconCard  name='Computer' icon="laptop-outline" />
+                        <IconCard  name='Gifts' icon="ios-gift-outline" />
+                        <IconCard  name='Kitchen'  icon="fast-food-outline" />
+                        <IconCard  name='Kitchen' icon="fast-food-outline" />
                     </ScrollView>
                 </View>
 

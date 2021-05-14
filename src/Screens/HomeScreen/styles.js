@@ -54,7 +54,7 @@ const styles = StyleSheet.create({
         marginBottom: 15,
     },
     icon: {
-        backgroundColor: globalStyles.darkBlue,
+        // backgroundColor: globalStyles.darkBlue,
         height: 35,
         width: 35,
     },
