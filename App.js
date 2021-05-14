@@ -11,12 +11,12 @@ import React from 'react';
 import type {Node} from 'react';
 
 import {AppScreen, AppText, HeaderText} from './src/Components';
-import { CartScreen, Home, ProductDetailsScreen } from './src/Screens';
+import {AppSplashScreen, CartScreen, Home, ProductDetailsScreen } from './src/Screens';
 
 const App: () => Node = () => {
   return (
     <AppScreen>
-      <Home />
+      <AppSplashScreen />
     </AppScreen>
   );
 };
